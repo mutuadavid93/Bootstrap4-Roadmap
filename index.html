@@ -15,49 +15,47 @@
     <title>Core Colours</title>
   </head>
   <body>
-    <!-- Bootstrap 4 Core Colours -->
-    <section class="container-fluid text-center">
-      <h4>Bootstrap IV Core Colours</h4>
-      <div class="myDiv bg-primary">Blue</div>
-      <div class="myDiv bg-secondary">Gray</div>
-      <div class="myDiv bg-danger">Red</div>
-      <div class="myDiv bg-success">Green</div>
-      <div class="myDiv bg-warning">Yellow</div>
-      <hr />
-      <div class="myDiv bg-info">Cyan</div>
-      <div class="myDiv bg-dark">Black</div>
-      <div class="myDiv bg-light text-dark" style="border:1px solid black;">
-        Light
-      </div>
-      <div class="myDiv bg-white text-dark" style="border:1px solid black;">
-        White
-      </div>
-      <div
-        class="myDiv bg-transparent text-dark"
-        style="border:1px solid black;"
-      >
-        Transparent
-      </div>
-    </section>
-
-    <!-- Grid Layout -->
-    <hr />
-    <section class="container">
-      <h4>Grid Layout</h4>
-      <div class="row">
-        <div class="myRow col bg-danger"></div>
-        <div class="myRow col bg-warning"></div>
-        <div class="myRow col bg-info"></div>
-        <div class="myRow col bg-success"></div>
-      </div>
-    </section>
-    <hr />
-
-    <!-- Media Break Points -->
+    <!-- Grid System -->
     <section class="container-fluid">
-      <!-- my == "Means Margin Vertical" -->
-      <h4 class="text-center display-4 my-1">Media Break Points</h4>
-      <div class="row"><div id="mybreakpoint"></div></div>
+      <h4>Grid System</h4>
+      <aside class="row">
+        <!-- All Equal Columns -->
+        <div class="mygrid col">Equal(.col)</div>
+        <div class="mygrid col">Equal(.col)</div>
+        <div class="mygrid col">Equal(.col)</div>
+      </aside>
+
+      <aside class="row">
+        <!-- By Design col takes rest of the remaining space -->
+        <div class="mygrid col-5">Auto(.col-5)</div>
+        <div class="mygrid col-2">Auto(.col-2)</div>
+        <div class="mygrid col">Auto(.col: Fill Remaining Space)</div>
+      </aside>
+
+      <aside class="row">
+        <!-- Stacks them up after getting to SM -->
+        <div class="mygrid col-sm">Other(.col-sm: Stack @SM)</div>
+        <div class="mygrid col-sm">Other(.col-sm: Stack @SM)</div>
+        <div class="mygrid col-sm">Other(.col-sm: Stack @SM)</div>
+      </aside>
+
+      <aside class="row">
+        <!-- Reorder the Columns using Flexbox -->
+        <div class="mygrid col-sm order-3">First(Reorder Columns)</div>
+        <div class="mygrid col-sm order-1">Second(Reorder Columns)</div>
+        <div class="mygrid col-sm order-2">Third(Reorder Columns)</div>
+      </aside>
+
+      <aside class="row">
+        <!-- Nest Columns -->
+        <div class="mygrid col">
+          <p class="text-center">Parent Column(.col)</p>
+          <div class="row">
+            <div class="mygrid col order-1">Second(Nested Column)</div>
+            <div class="mygrid col order-2">Third(Nested Column)</div>
+          </div>
+        </div>
+      </aside>
     </section>
 
     <!-- Optional JavaScript -->
