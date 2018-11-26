@@ -33,6 +33,5 @@
 @media(max-width: 575px) {body{background: navy;color: white}}
 
 .mygrid{
-    margin-top:3%;
     border: 1px solid #000000;
 }
