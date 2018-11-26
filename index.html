@@ -15,56 +15,24 @@
     <title>Core Colours</title>
   </head>
   <body>
-    <!-- Offsets and alignment -->
-    <div class="container-fluid">
-      <section class="bg-warning" style="margin-top: 30px;">
-        <!-- Use: .align-items-end/start/centre class on the parent item -->
-        <div class="row bg-warning align-items-end" style="height: 100px;">
-          <!-- Use:  .align-self-start/center/end on individual items -->
-          <div class="mygrid col bg-secondary align-self-start">
-            Column 1(.align-self-start)
-          </div>
-          <div class="mygrid col bg-success align-self-center">
-            Column 2(.align-self-centre)
-          </div>
-          <div class="mygrid col bg-secondary align-self-end">
-            Column 3(.align-self-end)
-          </div>
-        </div>
-      </section>
-    </div>
+    <!-- Margins,Padding and Display -->
+    <!--
+      ABREVIATIONS:
+      t: top
+      b: bottom
+      l: left e.g. ml-number/auto, pr-number
+      x: horizontal (left and right)
+      y: vertical(top and bottom)
+      blank: all way around
 
-    <div class="container-fluid">
-      <section class="bg-warning" style="margin-top: 30px;">
-        <!--
-          Use: .justify-content-end/start/centre class on the parent column
-          to align the child columns respectively.
-          Use: .justify-content-around to position the columns evenly on the parent column.
-          Use: .justify-content-between to place the extra space between the two columns.
-        -->
-        <div
-          class="row bg-warning justify-content-between"
-          style="height: 150px;"
-        >
-          <div class="col-4 bg-secondary">Column 4</div>
-          <div class="col-4 bg-success">Column 4</div>
-        </div>
-      </section>
-    </div>
+      m: margin
+      p: padding e.g. px-2 to span left & right padding.
+      d: display e.g. d-block to span parent full width.
+      m-number e.g. m-5 or p-5: evenly distribute space.
 
-    <div class="container-fluid">
-      <section class="" style="margin-top: 30px;">
-        <!--
-          Use: .ml-auto and .mr-auto on a column to autospace margin on the left and right
-          of the column in context respectively.
-          Use: .offset-number to push a column over the remaing "exact" space.
-        -->
-        <div class="row" style="height: 150px;">
-          <div class="col-3 bg-success">Column 4</div>
-          <div class="col-3 bg-secondary offset-6">Column 4</div>
-        </div>
-      </section>
-    </div>
+      Display:
+      d-inline to arrange items in a horizontal flow.
+    -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
