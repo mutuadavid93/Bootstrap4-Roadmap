@@ -13,26 +13,21 @@
     <link rel="stylesheet" href="css/mystyles.css" />
 
     <title>Core Colours</title>
+    <style>
+      div {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
-    <!-- Margins,Padding and Display -->
-    <!--
-      ABREVIATIONS:
-      t: top
-      b: bottom
-      l: left e.g. ml-number/auto, pr-number
-      x: horizontal (left and right)
-      y: vertical(top and bottom)
-      blank: all way around
-
-      m: margin
-      p: padding e.g. px-2 to span left & right padding.
-      d: display e.g. d-block to span parent full width.
-      m-number e.g. m-5 or p-5: evenly distribute space.
-
-      Display:
-      d-inline to arrange items in a horizontal flow.
-    -->
+    <!-- Flexible Box -->
+    <aside class="container m-5">
+      <section class="d-flex flex-row align-items-center">
+        <div class="p-5">One</div>
+        <div class="p-5">Two</div>
+        <div class="p-5">Three</div>
+      </section>
+    </aside>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
