@@ -8,5 +8,26 @@
     /* Center the text. */ 
     text-align: center;
     vertical-align: middle;
-    line-height: 110px;
+    line-height: 110px; /* Eq Height of your Div */
 }
+
+.myRow {
+    height: 15px;
+}
+
+
+/* Breakpoints */
+/**  - SM i.e. Tablets*/
+@media(min-width: 576px) {body{background: green}}
+
+/**  - MD e.g. Tablets,Small and Desktops(Horizontal/Landscape) */
+@media(min-width: 768px) {body{background: red}}
+
+/** Large Screens - LG  e.g. Desktops */
+@media(min-width: 992px) {body{background: yellow}}
+
+/** Wide Screens - XL */
+@media(min-width: 1200px) {body{background: white}}
+
+/** Mobile Phones and Other xtra-SM screens */
+@media(max-width: 575px) {body{background: navy;color: white}}
