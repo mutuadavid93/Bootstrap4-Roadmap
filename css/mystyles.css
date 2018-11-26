@@ -1,0 +1,12 @@
+.myDiv{
+    width: 150px;
+    padding: 20px;
+    margin: 20px 10px;
+    display: inline-block;
+    height: 150px;
+    color: #ffffff;
+    /* Center the text. */ 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+}
