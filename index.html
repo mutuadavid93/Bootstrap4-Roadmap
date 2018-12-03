@@ -10,24 +10,46 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
 
-    <title>Core Colours</title>
-    <style>
-      div {
-        border: 1px solid black;
-      }
-    </style>
+    <title>Alpha</title>
   </head>
-  <body>
-    <!-- Flexible Box -->
-    <aside class="container m-5">
-      <section class="d-flex flex-row align-items-center">
-        <div class="p-5">One</div>
-        <div class="p-5">Two</div>
-        <div class="p-5">Three</div>
-      </section>
-    </aside>
+  <body id="top">
+    <!-- Start Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-light"
+      id="mainNav"
+    >
+      <div class="container">
+        <a href="#top" class="navbar-brand js-scroll-trigger">Navbar</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a href="#link1" class="nav-link js-scroll-trigger">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#link2" class="nav-link js-scroll-trigger">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#link3" class="nav-link js-scroll-trigger">Link 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#link4" class="nav-link js-scroll-trigger">Link 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
